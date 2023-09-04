@@ -24,7 +24,7 @@
 .title {
   width: max-content;
   color: var(--white);
-  font-family: Courier New, Courier, monospace;
+  font-family: serif;
   grid-area: title;
   justify-self: center;
 }
