@@ -89,7 +89,6 @@
 }
 
 .background {
-  filter: blur(1px);
   object-fit: cover;
   z-index: -1;
 }
