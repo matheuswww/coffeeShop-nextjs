@@ -61,11 +61,11 @@ export default async function RootLayout({
               O <span>AROMA</span> PERFEITO
             </h1>
             <Background
-              src="/img/background.jpg"
+              src="/img/background (1).png"
               alt="imagem de fundo,imagem de grãos de café"
               fill
-              quality={70}
               className={styles.background}
+              quality={100}
             />
           </header>
           {children}

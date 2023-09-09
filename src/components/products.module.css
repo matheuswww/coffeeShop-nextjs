@@ -1,0 +1,107 @@
+.section {
+  margin-top: 15px;
+  width: 1190px;
+}
+
+.nameSection {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 12px 0px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.slide {
+  display: inline-flex;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+  width: 240px;
+  height: 98px;
+  background-color: black;
+  border: 2px solid #ff940066;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "image name"
+  "image desc"
+  "image price"
+  ;
+  position: relative;
+  border-radius: 6px;
+}
+
+.product {
+  margin: 23px 15px;
+  list-style: none;
+}
+
+.product:first-child {
+  margin-left: 0px;
+}
+
+.product:last-child {
+  margin-right: 0px;
+}
+
+.image {
+  grid-area: image;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 5px;
+}
+
+.name {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  grid-area: name;
+  align-self: start;
+  margin-left: 20px;
+  color: var(--white);
+}
+
+.desc {
+  font-size: .8rem;
+  align-self: center;
+  margin-left: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  grid-area: desc;
+  margin-left: 20px;
+  font-weight: 500;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.price {
+  font-size: .7rem;
+  margin-left: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--golden);
+  align-self: end;
+  margin-bottom: 10px;
+  font-weight: 600;
+  grid-area: price;
+  margin-left: 20px;
+}
+
+@media (max-width: 1195px) {
+  .section {
+    width: 100vw;
+  }
+
+  .nameSection {
+    margin-left: 15px;
+  }
+}
