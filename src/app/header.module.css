@@ -58,7 +58,7 @@
   width: max-content;
   height: max-content;
   justify-self: end;
-  margin: 11px 18px;
+  margin: 11px 13px;
 }
 
 .account::after {
@@ -96,7 +96,7 @@
 @media (max-width: 380px) {
   .header {
     justify-content: center;
-    grid-template-columns: repeat(3,105px);
+    grid-template-columns: repeat(3,123px);
   }
 
   .title {
@@ -111,5 +111,33 @@
   .account {
     width: 21px;
     height: 21px;
+  }
+}
+
+@media (max-width: 370px) {
+  .header {
+    justify-content: center;
+    grid-template-columns: repeat(3,117px);
+  }
+}
+
+@media (max-width: 348px) {
+  .header {
+    justify-content: center;
+    grid-template-columns: repeat(3,110px);
+  }
+}
+
+@media (max-width: 326px) {
+  .header {
+    justify-content: center;
+    grid-template-columns: repeat(3,105px);
+  }
+}
+
+@media (min-width: 414px) {
+  .header {
+    grid-template-columns: repeat(3,141px);
+    justify-content: center;
   }
 }
