@@ -1,6 +1,143 @@
+.section {
+  margin-top: 80px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 429px 429px;
+  grid-template-rows: 120px 300px;
+  justify-content: center;
+}
+
 .main {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+}
+
+.image1 {
+  border: 1px solid var(--golden);
+}
+
+.image2{
+  border: 1px solid var(--golden);
+}
+
+.nameSection {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 12px 0px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 400px;
+}
+
+.golden {
+  color: var(--golden);
+}
+@media (max-width: 1195px)  {
+  .section {
+    margin-top: 40px;
+    grid-template-columns: auto;
+    grid-template-rows: 140px 233px 262px;
+  }
+
+  .nameSection {
+    width: 575px;
+  }
+
+  .image2{
+    margin-left: 144px;
+    width: 350px;
+    height: 234px; /* Mantém a proporção (430x287) */
+  }
+
+  .image1 {
+    width: 350px;
+    height: 234px; /* Mantém a proporção (430x287) */
+  }
+}
+
+@media (max-width: 620px) {
+  .nameSection {
+    width: 480px;
+  }
+
+  .section {
+    margin-top: 40px;
+    grid-template-columns: auto;
+  }
+
+  .image2{
+    margin-left: 130px;
+    width: 350px;
+    height: 234px; /* Mantém a proporção (430x287) */
+  }
+}
+
+@media (max-width: 520px) {
+  .image2{
+    margin-left: 80px;
+    width: 270px;
+    height: 180px; /* Mantém a proporção (430x287) */
+  }
+
+  .image1 {
+    width: 270px;
+    height: 180px; /* Mantém a proporção (430x287) */
+  }
+
+  .nameSection {
+    width: 350px;
+    font-size: 1.6rem;
+  }
+
+  .section {
+    margin-top: 10px;
+    grid-template-rows: 105px 179px 210px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nameSection {
+    width: 300px;
+    font-size: 1.4rem;
+  }
+
+  .image2{
+    margin-left: 80px;
+    width: 230px;
+    height: 153px; /* Mantém a proporção (430x287) */
+  }
+
+  .image1 {
+    width: 230px;
+    height: 153px; /* Mantém a proporção (430x287) */
+  }
+
+  .section {
+    margin-top: 10px;
+    grid-template-rows: 105px 152px 190px;
+  }
+}
+
+@media (max-width: 335px) {
+  .section {
+    grid-template-rows: 100px 139px 175px;
+  }
+
+  .nameSection {
+    width: 250px;
+    font-size: 1.3rem;
+  }
+
+  .image2{
+    margin-left: 45px;
+    width: 210px;
+    height: 140px; /* Mantém a proporção (430x287) */
+  }
+
+  .image1 {
+    width: 210px;
+    height: 140px; /* Mantém a proporção (430x287) */
+  }
 }
