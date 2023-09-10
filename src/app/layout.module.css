@@ -19,7 +19,8 @@
   height: 80px;
   background-color: var(--golden);
   border: 1px solid #ffffff82;
-  margin-top: 90px;
+  position: absolute;
+  bottom: -90px;
 }
 
 .footer p {
@@ -30,6 +31,11 @@
 
 .logo {
   margin: 10px 10px;
+  width: max-content;
+  height: max-content;
+}
+
+.logo img {
   background: #c0c0c0;
   padding: 5px;
   border-radius: 5px;
@@ -95,6 +101,13 @@
 }
 
 .logo2 {
+  grid-area: logo2;
+  width: max-content;
+  height: max-content;
+  justify-self: center;
+}
+
+.logo2 img{
   z-index : 2;
   top: 77%;
   left: 50%;
@@ -102,8 +115,6 @@
   padding: 5px;
   border-radius: 100px;
   border: 1px solid #e59930;
-  grid-area: logo2;
-  justify-self: center;
 }
 
 .background {

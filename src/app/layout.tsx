@@ -22,7 +22,7 @@ export default async function RootLayout({
       <html lang="pt-br">
         <body>
           <header className={styles.header}>
-            <Link href="#" className={styles.logo}>
+            <Link href="/" className={styles.logo}>
               <Logo
                 src="/img/logo.png"
                 alt="Página inicial"
@@ -33,13 +33,13 @@ export default async function RootLayout({
             </Link>
             <ul className={styles.menu}>
               <li aria-label="Página inicial">
-                <Link href="#">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li aria-label="Página sobre nós">
-                <Link href="#">Sobre</Link>
+                <Link href="/sobre">Sobre</Link>
               </li>
               <li aria-label="Página de contato">
-                <Link href="#">Contato</Link>
+                <Link href="/contato">Contato</Link>
               </li>
             </ul>
             <Link href="#" className={styles.account}>
@@ -57,13 +57,14 @@ export default async function RootLayout({
                 quality={70}
               />
             </Link>
-            <Logo
-              height={50}
-              width={50}
-              src="/img/logo.png"
-              alt="Logo da marca,imagem de um café com um vapor saindo"
-              className={styles.logo2}
-            />
+            <Link href="/" className={styles.logo2}>
+              <Logo
+                height={50}
+                width={50}
+                src="/img/logo.png"
+                alt="Logo da marca,imagem de um café com um vapor saindo"
+              />
+            </Link>
             <h1 className={styles.title}>
               O <span>AROMA</span> PERFEITO
             </h1>
