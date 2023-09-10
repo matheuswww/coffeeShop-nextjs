@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  margin-bottom: 100px;
 }
 
 .image1 {
@@ -48,12 +49,12 @@
   .image2{
     margin-left: 144px;
     width: 350px;
-    height: 234px; /* Mantém a proporção (430x287) */
+    height: 234px;
   }
 
   .image1 {
     width: 350px;
-    height: 234px; /* Mantém a proporção (430x287) */
+    height: 234px;
   }
 }
 
@@ -70,7 +71,7 @@
   .image2{
     margin-left: 130px;
     width: 350px;
-    height: 234px; /* Mantém a proporção (430x287) */
+    height: 234px;
   }
 }
 
@@ -78,12 +79,12 @@
   .image2{
     margin-left: 80px;
     width: 270px;
-    height: 180px; /* Mantém a proporção (430x287) */
+    height: 180px;
   }
 
   .image1 {
     width: 270px;
-    height: 180px; /* Mantém a proporção (430x287) */
+    height: 180px;
   }
 
   .nameSection {
@@ -106,12 +107,12 @@
   .image2{
     margin-left: 80px;
     width: 230px;
-    height: 153px; /* Mantém a proporção (430x287) */
+    height: 153px;
   }
 
   .image1 {
     width: 230px;
-    height: 153px; /* Mantém a proporção (430x287) */
+    height: 153px;
   }
 
   .section {
@@ -133,11 +134,11 @@
   .image2{
     margin-left: 45px;
     width: 210px;
-    height: 140px; /* Mantém a proporção (430x287) */
+    height: 140px;
   }
 
   .image1 {
     width: 210px;
-    height: 140px; /* Mantém a proporção (430x287) */
+    height: 140px;
   }
 }

@@ -20,7 +20,7 @@
   background-color: var(--golden);
   border: 1px solid #ffffff82;
   position: absolute;
-  bottom: -90px;
+  bottom: 0px;
 }
 
 .footer p {
