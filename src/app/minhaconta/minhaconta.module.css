@@ -1,0 +1,72 @@
+.main {
+  display: grid;
+  justify-content: center;
+}
+
+.cart {
+  margin: auto;
+  justify-self: center;
+}
+
+.cart h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 30px;
+  color: var(--white);
+  margin-left: 5px;
+}
+
+.cart table {
+  border-collapse: collapse;
+  padding: 0;
+}
+
+.cart table tr td {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--white);
+  font-weight: 600;
+  padding: 5px 8px;
+  font-size: .9rem;
+}
+
+.cart table tr {
+  position: relative;
+  display: block;
+  background-color: #0a0a0a;
+  border-radius: 4px;
+  border: 1px solid var(--golden);
+  margin: 10px 0px;
+}
+
+.delete {
+  position: absolute;
+  top: -15px;
+  background-color: #d03838;
+  border-radius: 100%;
+  margin-right: 10px;
+  border: none;
+  height: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 410px) {
+  .imgProduct{
+    width: 55px;
+    height: 88px;
+  }
+
+  .cart table tr td {
+    font-size: .8rem;
+    padding: 5px 4px;
+  }
+
+  .delete {
+    right: -19px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .delete img {
+    width: 24px;
+    height: 24px;
+  }
+}

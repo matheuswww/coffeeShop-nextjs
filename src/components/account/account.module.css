@@ -1,0 +1,64 @@
+.title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  color: var(--white);
+  text-align: center;
+}
+
+.myaccount {
+  position: relative;
+  overflow: hidden;
+  height: 24px;
+  margin-top: 14px;
+}
+
+.myaccount div {
+  margin-top: 15px;
+  transition: .3s;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.myaccount div p {
+  align-self: self-start;
+  margin: 8px 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.myaccount label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  margin: 8px 0px;
+  text-align: start;
+  margin-left: 27px;
+  cursor: pointer;
+}
+
+.expand {
+  margin-top: -3px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.expand.hidden {
+  display: none;
+}
+
+.logout {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 9px;
+  background-color: #d03838;
+  font-weight: 600;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  width: 115px;
+  cursor: pointer;
+}
