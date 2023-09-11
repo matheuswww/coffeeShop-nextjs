@@ -1,4 +1,4 @@
-import Products from '@/components/products/products'
+import Products from '@/components/dashboard/products/products'
 import Image1 from 'next/image'
 import Image2 from 'next/image'
 import styles from './page.module.css'

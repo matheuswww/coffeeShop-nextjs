@@ -5,7 +5,7 @@ import Background from 'next/image'
 import Logo from 'next/image'
 import Account from 'next/image'
 import Link from 'next/link'
-import Icon from 'next/image'
+import Footer from '@/components/footer/footer'
 
 export const metadata: Metadata = {
   title: 'Coffee | Home',
@@ -42,7 +42,7 @@ export default async function RootLayout({
                 <Link href="/contato">Contato</Link>
               </li>
             </ul>
-            <Link href="#" className={styles.account}>
+            <Link href="/minhaconta" className={styles.account}>
               <span
                 className={styles.noti}
                 aria-label="você possui uma notificação"
@@ -77,19 +77,7 @@ export default async function RootLayout({
             />
           </header>
           {children}
-          <footer className={styles.footer}>
-            <p>
-              Coffee Shop{' '}
-              <Icon
-                src="/img/favicon.ico"
-                width={15}
-                height={15}
-                alt="logo da empresa,imagens de grãos de café"
-                className={styles.footerIcon}
-              />
-            </p>
-            <p>Nenhum direito reservado</p>
-          </footer>
+          <Footer />
         </body>
       </html>
     </>

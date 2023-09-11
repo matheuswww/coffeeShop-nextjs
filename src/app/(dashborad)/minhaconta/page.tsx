@@ -1,4 +1,4 @@
-import Account from '@/components/account/account'
+import Account from '@/components/dashboard/account/account'
 import styles from './minhaconta.module.css'
 import Product from 'next/image'
 import Delete from 'next/image'
