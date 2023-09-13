@@ -2,6 +2,12 @@ import Products from '@/components/dashboard/products/products'
 import Image1 from 'next/image'
 import Image2 from 'next/image'
 import styles from './page.module.css'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Coffee | Home',
+  description: 'Sua conta'
+}
 
 export default function Home() {
   return (

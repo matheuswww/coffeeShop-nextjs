@@ -1,16 +1,10 @@
 import './globals.css'
-import type { Metadata } from 'next'
 import styles from './layout.module.css'
 import Background from 'next/image'
 import Logo from 'next/image'
 import Account from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/footer/footer'
-
-export const metadata: Metadata = {
-  title: 'Coffee | Home',
-  description: 'o melhor café da sua vida aqui!'
-}
 
 export default async function RootLayout({
   children

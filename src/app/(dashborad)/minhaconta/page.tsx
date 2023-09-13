@@ -2,6 +2,12 @@ import Account from '@/components/dashboard/account/account'
 import styles from './minhaconta.module.css'
 import Product from 'next/image'
 import Delete from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Coffee | Minha conta',
+  description: 'sua conta'
+}
 
 export default function minhaconta() {
   return (

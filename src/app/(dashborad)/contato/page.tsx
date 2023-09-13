@@ -1,4 +1,10 @@
+import { Metadata } from 'next'
 import styles from './contato.module.css'
+
+export const metadata: Metadata = {
+  title: 'Coffee | Contato',
+  description: 'nosso contato'
+}
 
 export default function Contato() {
   return (

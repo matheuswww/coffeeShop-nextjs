@@ -1,4 +1,10 @@
+import { Metadata } from 'next'
 import styles from './sobre.module.css'
+
+export const metadata: Metadata = {
+  title: 'Coffee | sobre',
+  description: 'Sobre nós'
+}
 
 export default function Sobre() {
   return (
