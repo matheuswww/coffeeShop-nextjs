@@ -2,7 +2,7 @@
 import Slide from '@/funcs/slide'
 import styles from './products.module.css'
 import Product from 'next/image'
-import { useEffect, useRef } from 'react'
+import { SyntheticEvent, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 export default function Products() {
@@ -18,6 +18,11 @@ export default function Products() {
       new Slide(slide.current, wrapper.current)
     }
   }, [])
+
+  function handleClick(event: SyntheticEvent) {
+    event.preventDefault()
+  }
+
   return (
     <>
       <section className={styles.section} aria-label="Slide de produtos">
@@ -25,7 +30,7 @@ export default function Products() {
         <div className={styles.wrapper} ref={wrapper}>
           <ul className={styles.slide} ref={slide}>
             <li className={styles.product}>
-              <Link href="#" className={styles.link}>
+              <Link href="/produto/1" className={styles.link}>
                 <Product
                   width={80}
                   height={129}
@@ -35,12 +40,14 @@ export default function Products() {
                   className={styles.image}
                 />
                 <p className={styles.name}>Café Preto</p>
-                <p className={styles.desc}>Café preto legal</p>
                 <p className={styles.price}>R$ 150,00</p>
+                <button onClick={handleClick} className={styles.button}>
+                  Add ao carrinho
+                </button>
               </Link>
             </li>
             <li className={styles.product}>
-              <Link href="#" className={styles.link}>
+              <Link href="/produto/2" className={styles.link}>
                 <Product
                   width={80}
                   height={129}
@@ -50,12 +57,14 @@ export default function Products() {
                   className={styles.image}
                 />
                 <p className={styles.name}>Café Preto</p>
-                <p className={styles.desc}>Café preto legal</p>
                 <p className={styles.price}>R$ 150,00</p>
+                <button onClick={handleClick} className={styles.button}>
+                  Add ao carrinho
+                </button>
               </Link>
             </li>
             <li className={styles.product}>
-              <Link href="#" className={styles.link}>
+              <Link href="/produto/3" className={styles.link}>
                 <Product
                   width={80}
                   height={129}
@@ -65,12 +74,14 @@ export default function Products() {
                   className={styles.image}
                 />
                 <p className={styles.name}>Café Preto</p>
-                <p className={styles.desc}>Café preto legal</p>
                 <p className={styles.price}>R$ 150,00</p>
+                <button onClick={handleClick} className={styles.button}>
+                  Add ao carrinho
+                </button>
               </Link>
             </li>
             <li className={styles.product}>
-              <Link href="#" className={styles.link}>
+              <Link href="/produto/4" className={styles.link}>
                 <Product
                   width={80}
                   height={129}
@@ -80,23 +91,10 @@ export default function Products() {
                   className={styles.image}
                 />
                 <p className={styles.name}>Café Preto</p>
-                <p className={styles.desc}>Café preto legal</p>
                 <p className={styles.price}>R$ 150,00</p>
-              </Link>
-            </li>
-            <li className={styles.product}>
-              <Link href="#" className={styles.link}>
-                <Product
-                  width={80}
-                  height={129}
-                  quality={100}
-                  src="/img/product.png"
-                  alt="#"
-                  className={styles.image}
-                />
-                <p className={styles.name}>Café Preto</p>
-                <p className={styles.desc}>Café preto legal</p>
-                <p className={styles.price}>R$ 150,00</p>
+                <button onClick={handleClick} className={styles.button}>
+                  Add ao carrinho
+                </button>
               </Link>
             </li>
           </ul>
