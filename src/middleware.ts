@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 export default function middleware(request: NextRequest) {
-  const token = true
-  const signInUrl = new URL('/', request.url)
+  const token = false
+  const signInUrl = new URL('/cadastrar', request.url)
   if (!token) {
     if (request.nextUrl.pathname === '/') {
       return NextResponse.next()

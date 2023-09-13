@@ -1,0 +1,31 @@
+.label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  display: block;
+  margin: 5px;
+  cursor: pointer;
+  width: max-content;
+}
+
+.input {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 2px;
+  border: none;
+  width: 245px;
+  outline-color: var(--white);
+  background-color: var(--golden);
+  color: var(--black);
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 480px) {
+  .label {
+    font-size: .9rem;
+  }
+
+  .input {
+    width: 205px;
+  }
+}
