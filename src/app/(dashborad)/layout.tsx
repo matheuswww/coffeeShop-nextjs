@@ -6,6 +6,13 @@ import Link from 'next/link'
 import Footer from '@/components/footer/footer'
 import Logo from '@/components/logo/logo'
 import LogoImg from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  icons: {
+    icon: '/icon/favicon.ico'
+  }
+}
 
 export default async function RootLayout({
   children

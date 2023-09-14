@@ -4,7 +4,10 @@ import Footer from '@/components/footer/footer'
 
 export const metadata: Metadata = {
   title: 'Coffee | autenticação',
-  description: 'Autenticar na coffee shop'
+  description: 'Autenticar na coffee shop',
+  icons: {
+    icon: '/icon/favicon.ico'
+  }
 }
 
 export default async function RootLayout({

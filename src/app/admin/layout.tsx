@@ -7,7 +7,10 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Coffee | Admin',
-  description: 'Administração coffee shop'
+  description: 'Administração coffee shop',
+  icons: {
+    icon: '/icon/favicon.ico'
+  }
 }
 
 export default async function RootLayout({
