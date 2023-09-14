@@ -1,10 +1,11 @@
 import './globals.css'
 import styles from './layout.module.css'
 import Background from 'next/image'
-import Logo from 'next/image'
 import Account from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/footer/footer'
+import Logo from '@/components/logo/logo'
+import LogoImg from 'next/image'
 
 export default async function RootLayout({
   children
@@ -16,15 +17,9 @@ export default async function RootLayout({
       <html lang="pt-br">
         <body>
           <header className={styles.header}>
-            <Link href="/" className={styles.logo}>
-              <Logo
-                src="/img/logo.png"
-                alt="Página inicial"
-                height={20}
-                width={20}
-                quality={70}
-              />
-            </Link>
+            <div className={styles.logo}>
+              <Logo />
+            </div>
             <ul className={styles.menu}>
               <li aria-label="Página inicial">
                 <Link href="/">Home</Link>
@@ -52,7 +47,7 @@ export default async function RootLayout({
               />
             </Link>
             <Link href="/" className={styles.logo2}>
-              <Logo
+              <LogoImg
                 height={50}
                 width={50}
                 src="/img/logo.png"

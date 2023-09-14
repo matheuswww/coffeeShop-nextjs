@@ -1,0 +1,13 @@
+.logo {
+  width: max-content;
+  height: max-content;
+}
+
+.logo img {
+  background: #c0c0c0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #e59930;
+  height: 30px;
+  width: max-content;
+}
