@@ -3,9 +3,9 @@ import { useForm } from 'react-hook-form'
 import Link from 'next/link'
 import z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import Form from '@/components/auth/form/form'
-import { Input } from '@/components/auth/input/Input'
-import Button from '@/components/auth/Button/Button'
+import Form from '@/components/form/form/form'
+import { Input } from '@/components/form/input/Input'
+import Button from '@/components/form/Button/Button'
 
 const schema = z.object({
   nome: z.string().min(2, 'Mínimo 2 caracteres!'),

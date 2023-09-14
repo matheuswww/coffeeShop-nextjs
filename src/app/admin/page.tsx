@@ -1,6 +1,5 @@
 'use client'
 import { useForm } from 'react-hook-form'
-import Link from 'next/link'
 import z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import Form from '@/components/form/form/form'
@@ -54,7 +53,7 @@ export default function Entrar() {
           <p className="error">{errors.email.message}</p>
         )}
       </div>
-      <div>
+      <div style={{ marginBottom: '20px' }}>
         <Input
           {...register('senha')}
           label="Senha"
@@ -66,13 +65,6 @@ export default function Entrar() {
           <p className="error">{errors.senha.message}</p>
         )}
       </div>
-      <Link
-        href="/cadastrar"
-        className="link"
-        aria-label="link para criar uma conta"
-      >
-        Não possui uma conta?
-      </Link>
       <Button arialLabel="Enviar dados">Entrar</Button>
     </Form>
   )

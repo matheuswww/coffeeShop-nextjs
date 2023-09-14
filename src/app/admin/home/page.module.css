@@ -1,0 +1,92 @@
+.main {
+  width: 100%;
+  height: calc(100vh - 125px);
+  display: grid;
+}
+
+.form {
+  width: 400px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+  justify-self: center;
+  border-radius: 4px;
+}
+
+.file {
+  width: 120px;
+  margin-left: 5px;
+  display: block;
+}
+
+.button {
+  margin-left: 5px;
+}
+
+.file {
+  border: none;
+  width: 130px;
+  height: 34px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.file::after {
+  content: 'Escolher arquivo';
+  width: 114px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  background: var(--golden);
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  background-color: #00000059;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.showImage {
+  background-color: transparent;
+}
+
+.showImage p {
+  display: none;
+}
+
+.form button {
+  margin-top: 10px;
+  width: 205px;
+  height: 35px;
+}
+
+@media (max-width: 480px) {
+  .form {
+    width: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .form {
+    width: 290px;
+  }
+}
