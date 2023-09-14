@@ -11,12 +11,10 @@ export const Input = forwardRef<HTMLInputElement, Input>(
   ({ id, label, ...inputProps }, ref) => {
     return (
       <>
-        <div>
-          <label htmlFor={id} className={styles.label}>
-            {label}
-          </label>
-          <input id={id} className={styles.input} ref={ref} {...inputProps} />
-        </div>
+        <label htmlFor={id} className={styles.label}>
+          {label}
+        </label>
+        <input id={id} className={styles.input} ref={ref} {...inputProps} />
       </>
     )
   }
